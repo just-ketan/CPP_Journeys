@@ -156,7 +156,39 @@ Exception:
     3.  bad_alloc
     4. bad_cast
     5.bad_function_call
+*/
 
+#include<bits/stdc++.h>
+using namespace std;
 
+int main(){
+    vector<int> nums= {1,2,3,4,5};
+
+    try{
+        nums.at(10);
+        // accessing index out of bounds
+    }
+    catch(out_of_range e){
+        // catching the out of range error
+        cout << "Index out of range" << e.what();
+        // e.waht briefs about the error
+    }
+}
+
+// there is nested try catch block implementation for specific catering
+
+/*
+try{
+// parent 'try' throws expection e2
+    try{
+        // throw e1
+    }
+    catch(exception e1){
+        // catch e1
+    }
+}
+catch(exception e2){
+    // caatch expection e2
+}
 
 */
