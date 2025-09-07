@@ -1,0 +1,4 @@
+/*
+Write a C program to read elements in a matrix and check whether the given matrix is
+a symmetric matrix or not.
+*/
